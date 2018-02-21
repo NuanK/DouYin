@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.asus.douyinapp.home.view.Main_search">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/search_sr1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/qx"
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/y15"
+                android:src="@drawable/qx"
+                android:layout_marginTop="@dimen/y3"
+                android:layout_marginLeft="@dimen/x3"
+                />
+
+            <TextView
+                android:id="@+id/search_search"
+                android:layout_marginTop="@dimen/x5"
+                android:layout_marginLeft="@dimen/x5"
+                android:padding="5dp"
+                android:layout_width="@dimen/x300"
+                android:layout_height="@dimen/y15"
+                android:background="@drawable/searchedit"
+                android:text="      请输入搜索内容"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"
+                />
+
+            <ImageView
+                android:id="@+id/sst"
+                android:layout_width="@dimen/x10"
+                android:layout_height="@dimen/y10"
+                android:src="@drawable/sst"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_marginTop="@dimen/y7"
+                />
+
+            <com.jcodecraeer.xrecyclerview.XRecyclerView
+                android:layout_below="@id/search_search"
+                android:id="@+id/search_xlv"
+                android:layout_marginTop="@dimen/y3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

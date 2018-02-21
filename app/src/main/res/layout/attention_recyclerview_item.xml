@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x160"
+    android:layout_height="@dimen/y200"
+    android:background="#000">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/x1"
+        android:layout_marginTop="@dimen/y1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgRvItem"
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/y200"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_placeholder" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/userInfo"-->
+            <!--android:layout_width="@dimen/x160"-->
+            <!--android:layout_height="@dimen/y10"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:orientation="horizontal">-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/y1"-->
+                <!--android:background="#ebebbe"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+        <TextView
+            android:id="@+id/tvRvItem"
+            android:layout_width="@dimen/x160"
+            android:layout_height="wrap_content"
+            android:text="关注的text"
+            android:textColor="#fff"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/y4"
+            android:layout_marginRight="@dimen/x15"
+            />
+    </RelativeLayout>
+</RelativeLayout>

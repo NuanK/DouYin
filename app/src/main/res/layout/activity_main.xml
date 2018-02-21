@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.douyinapp.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y24"
+        android:background="#787878" />
+
+    <LinearLayout
+        android:id="@+id/lyBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#787878"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgRefresh"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y16"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/refresh" />
+
+        <TextView
+            android:id="@+id/tvAttention"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="关注"
+            android:textColor="#787878"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgRelease"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y16"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/release" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="#787878"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="#787878"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/line01"
+                android:layout_width="@dimen/x22"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="#FFF" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/line02"
+                android:layout_width="@dimen/x22"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="#FFF" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/line03"
+                android:layout_width="@dimen/x22"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="#00000000" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/line04"
+                android:layout_width="@dimen/x22"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="#FFF" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/line05"
+                android:layout_width="@dimen/x13"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="#FFF" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

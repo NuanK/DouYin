@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F00"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/homeFramLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/x80"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvRecommend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="#FFF"
+                android:text="推荐"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvNearby"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:text="附近"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/home_search"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x16"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/search"
+            android:layout_width="@dimen/y12"
+            android:layout_height="@dimen/y12" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
